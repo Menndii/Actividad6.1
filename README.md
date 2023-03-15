@@ -1,6 +1,8 @@
 #Actividad6.1
+
 #Ejercicio1y2
-'''sh
+
+```sh
 read -p "Ingresa un número entero: " numero
 if [ $numero -gt 0 ]
 then
@@ -8,10 +10,10 @@ then
 else
   echo "El número no es positivo"
 fi
-'''
+```
 
 #Ejercicio3
-'''sh
+```sh
 read -p "Ingresa un número entero: " numero
 if [ $numero -eq 0 ]
 then
@@ -19,10 +21,10 @@ then
 else
   echo "El número no es igual a cero"
 fi
-'''
+```
 
 #Ejercicio4
-'''sh
+```sh
 read -p "Ingresa un número entero: " numero
 if [ $numero -eq 0 ]
 then
@@ -30,20 +32,20 @@ then
 else
   echo "El número no es igual a cero"
 fi
-'''
+```
 
 #Ejercicio5
-'''sh
+```sh
 if [ "$#" -eq 3 ]
 then
   echo "El número de parámetros es igual a 3"
 else
   echo "Error: El número de parámetros no es igual a 3"
 fi
-'''
+```
 
 #Ejercicio6
-'''sh
+```sh
 if [ "$#" -eq 2 ]
 then
   suma=$(( $1 + $2 ))
@@ -51,10 +53,10 @@ then
 else
   echo "Error: El número de parámetros no es igual a 2"
 fi
-'''
+```
 
 #Ejercicio7
-'''sh
+```sh
 if [ "$#" -eq 3 ]
 then
   num1=$1
@@ -74,7 +76,7 @@ then
 else
   echo "Error: El número de parámetros no es igual a 3"
 fi
-'''
+```
 
 #Ejercicio8
 '''sh

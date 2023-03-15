@@ -1,4 +1,4 @@
-# Actividad6.1
+#Actividad6.1
 #Ejercicio1y2
 '''sh
 read -p "Ingresa un número entero: " numero
@@ -20,6 +20,7 @@ else
   echo "El número no es igual a cero"
 fi
 '''
+
 #Ejercicio4
 '''sh
 read -p "Ingresa un número entero: " numero
@@ -30,6 +31,7 @@ else
   echo "El número no es igual a cero"
 fi
 '''
+
 #Ejercicio5
 '''sh
 if [ "$#" -eq 3 ]
@@ -39,6 +41,7 @@ else
   echo "Error: El número de parámetros no es igual a 3"
 fi
 '''
+
 #Ejercicio6
 '''sh
 if [ "$#" -eq 2 ]
@@ -49,6 +52,7 @@ else
   echo "Error: El número de parámetros no es igual a 2"
 fi
 '''
+
 #Ejercicio7
 '''sh
 if [ "$#" -eq 3 ]
@@ -71,5 +75,6 @@ else
   echo "Error: El número de parámetros no es igual a 3"
 fi
 '''
+
 #Ejercicio8
 '''sh

@@ -77,6 +77,93 @@ else
   echo "Error: El número de parámetros no es igual a 3"
 fi
 ```
+#Ejercicio11
+```sh
+for i in {1..50}; do echo "hola"; done
+```
+#Ejercicio12
+```sh
+for ((i=1; i<=10; i++))
+do
+  echo "Ingresa una palabra:"
+  read palabra
+  echo "La palabra es: $palabra"
+done
+```
+#Ejercicio13
+```sh
+if [ $# -eq 0 ]; then
+    echo "Debe proporcionar un número como argumento."
+    exit 1
+fi
+n=$1
+for (( i=0; i<$n; i++ )); do
+    echo "hola"
+done
+```
+#Ejercicio14
+```sh
+n=$1
+for i in $(seq 0 $n); do
+    echo $i
+done
+```
+#Ejercicio15
+```sh
+import sys
 
-#Ejercicio8
-'''sh
+n = int(sys.argv[1])
+suma = 0
+
+for i in range(1, n+1):
+    suma += i
+
+print("La suma de los números entre 1 y", n, "es:", suma)
+```
+#Ejercicio17
+```sh
+echo "Ingrese palabras. Escriba ':q' para salir."
+
+while true; do
+    read palabra
+    if [ "$palabra" = ":q" ]; then
+        echo "Programa finalizado."
+        break
+    else
+        echo "La palabra ingresada es: $palabra"
+    fi
+done
+```
+#Ejercicio18
+```sh
+echo "Escribe palabras para guardar en un archivo. Escribe ':q' para salir."
+
+read palabra
+
+while [ "$palabra" != ":q" ]; do
+    echo $palabra >> palabras.txt
+    read palabra
+done
+
+echo "Archivo 'palabras.txt' creado con éxito."
+```
+#Ejercicio20
+```sh
+touch numeros.txt
+nano numeros.txt
+#Añadimos los numeros que querramos que pertenezcan al archivo
+1 2 3 4 5 6 7 8 9 10
+touch buscar_numero.sh
+nano buscar_numero.sh
+
+
+echo "Ingresa un número: "
+read numero
+if grep -wq $numero "numeros.txt"; then
+    echo "El número $numero se encuentra en el archivo numeros.txt."
+else
+    echo "El número $numero no se encuentra en el archivo numeros.txt."
+fi
+```
+
+
